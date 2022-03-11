@@ -1,20 +1,20 @@
 #include <stdio.h>
 /**
  * main - main block
- * this code uses putchar function to ptint the alphabet in lowercase
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-    char n;
+    int c = 0;
 
-    n = 'a';
-
-    while (n <= 'z')
+    while (c < 10)
     {
-        putchar(n);
-        n++;
+        putchar(48 + c);
+        c++;
     }
-    putchar('\n');
 
+    putchar('\n');
     return (0);
+}
